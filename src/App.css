@@ -1,0 +1,71 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  width: 300px;
+  background-color: lightgray;
+}
+.card a {
+  color: black;
+}
+.card a:hover {
+  color: purple;
+}
+.card header {
+  position: relative;
+  height: 200px;
+  background-image: url("src/assets/img/Movie_picture.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.card header .movie-length {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: black;
+  font-weight: 600;
+}
+.card header .movie-title {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-family: serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  line-height: 2rem;
+}
+.card .body-main {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1;
+  padding: 10px;
+}
+.card .body-main .rate-area {
+  display: flex;
+  justify-content: space-between;
+}
+.card .body-main .rate-area span {
+  padding-right: 5px;
+}
+.card .body-main .rate-area .play-btn img {
+  height: 4rem;
+}
+.card .body-main .rate-area .play-btn:hover {
+  filter: invert(0.5);
+}
+.card .footer {
+  display: flex;
+  justify-content: center;
+  font-size: small;
+}
+.card .footer .lang {
+  margin: 0 5px 10px;
+}
+.card .footer .lang:hover {
+  border: purple;
+  color: #fff;
+  background-color: purple;
+}/*# sourceMappingURL=App.css.map */

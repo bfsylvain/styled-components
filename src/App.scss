@@ -1,0 +1,86 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 300px;
+    background-color: lightgray;
+
+    a {
+        color: black;
+    }
+    a:hover {
+        color: purple;
+    }
+
+    header {
+        position: relative;
+        height: 200px;
+        background-image: url("src/assets/img/Movie_picture.jpg") ;
+        background-size: cover;
+        background-position: center;
+        
+
+        .movie-length{
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            color: black;
+            font-weight: 600;
+        }
+
+        .movie-title {
+            position: absolute;
+            bottom: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #fff;
+            font-family: serif;
+            font-size: 2.2rem;
+            font-weight: 600;
+            letter-spacing: 0.2rem;
+            line-height: 2rem;
+        }
+    }
+
+    .body-main {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1;
+        padding: 10px;
+
+        .rate-area {
+            display: flex;
+            justify-content: space-between;
+
+            span{
+                padding-right: 5px;
+            }
+
+            .play-btn {
+                    img{
+                        height: 4rem;
+                    } 
+            }
+
+            .play-btn:hover {
+                filter: invert(0.5);
+            }
+        }
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        font-size: small;
+
+        .lang {
+            margin: 0 5px 10px;
+        }
+
+        .lang:hover {
+            border: purple;
+            color: #fff;
+            background-color: purple;
+        }
+    }
+}
