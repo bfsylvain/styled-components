@@ -66,6 +66,11 @@
                 filter: invert(0.5);
             }
         }
+        .synopsis-area {
+            h2 {
+                margin-top: 0;
+            }
+        }
     }
 
     .footer {

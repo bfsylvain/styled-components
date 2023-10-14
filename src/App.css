@@ -56,6 +56,9 @@
 .card .body-main .rate-area .play-btn:hover {
   filter: invert(0.5);
 }
+.card .body-main .synopsis-area h2 {
+  margin-top: 0;
+}
 .card .footer {
   display: flex;
   justify-content: center;
