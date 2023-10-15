@@ -1,19 +1,19 @@
 import React from "react";
 
 
-const CardBody = () => {
+const CardBody = ({synopsis, averageRate}) => {
     return (
     <div className="body-main">
         <div className="rate-area">
             <p>
-                <span>★★★★☆</span>
+                <span>{averageRate}</span>
                 <a href="">rate</a>
             </p>
-            <a className="play-btn" href=""><img src="src/assets/img/play_button.svg" alt="" /></a>
+            <a className="play-btn" href=""><img src="src/assets/img/play_button.svg" alt="playBtn"/></a>
         </div>
         <div className="synopsis-area">
             <h2>Synopsis</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae maiores error impedit nisi repellendus, voluptate, tenetur eaque odio veniam ut consectetur, praesentium in pariatur cum nihil ab temporibus quae neque.</p>
+            <p>{synopsis}</p>
         </div>
     </div>
     )

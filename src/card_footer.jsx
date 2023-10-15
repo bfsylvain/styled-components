@@ -1,8 +1,7 @@
 import React from "react";
 
-const languages = ["VO", "FR", "EN", "SP"]
 
-const CardFooter = () => {
+const CardFooter = ({languages}) => {
     return (
         <>
         <footer className="footer">
