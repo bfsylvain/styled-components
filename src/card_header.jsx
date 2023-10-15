@@ -1,18 +1,13 @@
 import React from "react";
 
-const time = (hours, minutes) => {
-   return `${hours}h${minutes}min`
-}
-const movie = {
-    title: "DeathProof",
-    length:165
-}
 
-const Header = () => {
+
+
+const Header = ({movie, convertedTime}) => {
 return(
     <>
         <header>
-        <div className="movie-length">{time(Math.floor(movie.length/60), movie.length%60)}</div>
+        <div className="movie-length">{convertedTime(movie.length)}</div>
         <div className="movie-title">{movie.title}</div>
         </header>
     </>
