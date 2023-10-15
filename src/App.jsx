@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import './App.scss'
-import Header from './card_header'
-import CardBody from './card_body'
-import CardFooter from './card_footer'
+import Header from './components/card_header'
+import CardBody from './components/card_body'
+import CardFooter from './components/card_footer'
 
 const movie = {
   title: "DeathProof",
