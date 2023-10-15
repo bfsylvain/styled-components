@@ -7,9 +7,10 @@ import CardFooter from './card_footer'
 const movie = {
   title: "DeathProof",
   length:165,
-  languages:["VO", "FR", "EN", "SP"],
+  poster: "src/assets/img/Movie_picture.jpg",
+  averageRate: "★★★★☆",
   synopsis: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, deserunt dolor? Excepturi quis at non cupiditate in eligendi qui illo praesentium, nisi, sunt dicta! Totam natus voluptatibus cupiditate aut sapiente.",
-  averageRate: "★★★★☆"
+  languages:["VO", "FR", "EN", "SP"]
 }
 
 const convertedTime = (totalLength) => {
@@ -21,7 +22,7 @@ const convertedTime = (totalLength) => {
 function App() {
   return (
     <div className='card'>
-    <Header movie={movie} convertedTime={convertedTime}/>
+    <Header movie={movie} convertedTime={convertedTime} moviePoster={movie.poster}/>
     <CardBody synopsis={movie.synopsis} averageRate={movie.averageRate}/>
     <CardFooter languages={movie.languages}/>
     </div>

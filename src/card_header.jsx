@@ -1,13 +1,11 @@
 import React from "react";
 
 
-
-
-const Header = ({movie, convertedTime}) => {
+const Header = ({movie, convertedTime, moviePoster}) => {
 return(
     <>
-        <header>
-        <div className="movie-length">{convertedTime(movie.length)}</div>
+        <header style={{backgroundImage: `url(${moviePoster})`}}>
+        <div className="movie-length" >{convertedTime(movie.length)}</div>
         <div className="movie-title">{movie.title}</div>
         </header>
     </>

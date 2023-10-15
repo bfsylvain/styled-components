@@ -14,7 +14,6 @@
 .card header {
   position: relative;
   height: 200px;
-  background-image: url("src/assets/img/Movie_picture.jpg");
   background-size: cover;
   background-position: center;
 }
